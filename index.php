@@ -38,13 +38,15 @@
         <section class="container">
             <div class="row py-3">
                 <div class="col-sm">
-                    <h3 class="display-4 text-center">Bem-vindo ao EduPoint</h3>
+                    <h3 class="display-4 text-center">
+                        <strong>Bem-vindo ao EduPoint</strong>
+                    </h3>
                 </div>
             </div>
             
 
             <div class="row justify-content-center py-5">
-                <div class="col-sm-8 border border-dark rounded bg-dark text-white">
+                <div class="col-sm-8 border border-dark rounded bg-dark text-white py-3">
                     <div class="row py-3">
                         <div class="col-sm text-center">
                             <h2>Área de Login</h2> 
@@ -59,7 +61,9 @@
                             <label for="senha">Senha</label>
                             <input type="password" class="form-control" id="senha" name="senha" placeholder="***********" required>
                         </div>
-                        <input type="submit" class="btn btn-light btn-md btn-block" name="entrar" value="Entrar">
+                        <button type="submit" class="btn btn-outline-light btn-md btn-block" name="entrar" >
+                            <strong>Entrar</strong>
+                        </button>
                     </form>
                 </div>
 

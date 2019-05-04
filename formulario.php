@@ -35,8 +35,10 @@
                 </select>
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary btn-md btn-block" name="cadastrar">Cadastrar</button>
+            <button type="submit" class="btn btn-dark btn-md btn-block" name="cadastrar">Cadastrar</button>
         </form>
+      </div>
+      <div class="modal-footer">
       </div>
     </div>
   </div>
