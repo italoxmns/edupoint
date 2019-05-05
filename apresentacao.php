@@ -21,8 +21,8 @@ include_once 'resetSenha.php';
     <section class="mt-2">
         <div class="container">
             <div class="row pb-3">
-                <div class="col-sm">
-                    <h5 class="display-4 text-center">Tabela de Pontuação</h5>
+                <div class="col-sm-6 text-center col-lg-12">
+                    <h2 class="text-center">Tabela de Pontuação</h2>
                 </div>
             </div>
         </div>
@@ -69,18 +69,19 @@ include_once 'resetSenha.php';
     </section>
     <section class="mt-2">
         <div class="container">
-            <div class="row  mt-2">
-                <div class="col-sm-12 bg-transparent">
+            <div class="row mt-2 ">
+                <div class="col-sm-6 col-lg-12 bg-transparent">
                     <!-- TABELAS -->
                     <table class="table table-hover text-center box-shadow">
                         <thead class="thead-dark">
                             <tr>
-                                <th scope="col">ID</th> <!-- Table header -->
-                                <th scope="col ">Posto</th>
                                 <th scope="col">Nome</th>
+                                <th scope="col ">Posto</th>
                                 <th scope="col">Pontos</th>
                                 <th scope="col">Medalhas</th>
-                                <th scope="col"><span class="d-none d-md-block">Alterar / Excluir</span></th>
+                                <th scope="col">
+                                    <i class="fas fa-tools fa-lg"></i>
+                                </th>
                             </tr>
                         </thead>
                         <tbody>
@@ -103,9 +104,9 @@ include_once 'resetSenha.php';
                                     ?>
 
                                     <tr>
-                                        <th scope="row" class="bg-dark text-white"><?= $linha['idranking'] ?></td> <!-- Table data -->
-                                        <td><strong><?= $linha['posto'] ?></strong></td>
+
                                         <td><strong><?= $linha['nome'] ?></strong></td>
+                                        <td><strong><?= $linha['posto'] ?></strong></td>
                                         <td><strong><?= $linha['pontos'] ?></strong></td>
                                         <td>
 
@@ -125,18 +126,13 @@ include_once 'resetSenha.php';
                                             ?>
                                         </td>
                                         <td>
-                                            <div class="row justify-content-center">
-                                                <div class="px-2">
-                                                    <a href="" data-toggle="modal" data-target="#update" data-id="<?php echo $linha['idranking']; ?>" data-name="<?php echo $linha['nome']; ?>" data-posto="<?php echo $linha['posto']; ?>" data-pontos="<?php echo $linha['pontos']; ?>" data-medalha="<?php echo $linha['medalha']; ?>">
-                                                        <i class="fas fa-user-edit fa-2x px-2 text-dark"></i>
-                                                    </a>
-                                                </div>
-                                                <div>
-                                                    <a href="excluir.php?ID=<?php echo $linha['idranking']; ?>">
-                                                        <i class="fas fa-user-times fa-2x text-danger px-2 "></i>
-                                                    </a>
-                                                </div>
-                                            </div>
+                                            <a href="" data-toggle="modal" data-target="#update" data-id="<?php echo $linha['idranking']; ?>" data-name="<?php echo $linha['nome']; ?>" data-posto="<?php echo $linha['posto']; ?>" data-pontos="<?php echo $linha['pontos']; ?>" data-medalha="<?php echo $linha['medalha']; ?>">
+                                                <i class="fas fa-user-edit fa-2x px-2 text-dark"></i>
+                                            </a>
+                                
+                                            <a href="excluir.php?ID=<?php echo $linha['idranking']; ?>">
+                                                <i class="fas fa-user-times fa-2x text-danger px-2 "></i>
+                                            </a>
                                         </td>
                                     </tr>
 

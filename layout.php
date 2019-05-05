@@ -13,7 +13,7 @@
 <body background="img/fundo-site.jpg">
     <header class="container">
         <nav class="navbar navbar-expand-md navbar-light px-0 ">
-            <a class="navbar-brand btn btn-dark text-white" href="#">EduPoint</a>
+            <a class="navbar-brand btn btn-dark text-white" href="">EduPoint</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -21,10 +21,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item mx-md-1 mx-sm-0 my-1 my-md-0">
-                        <a class="nav-link btn btn-dark text-white" href="">Cadastrar Aluno</a>
+                        <a class="nav-link btn btn-dark text-white" href="" data-toggle="modal" data-target="#modalCadastro">Cadastrar Aluno</a>
                     </li>
                     <li class="nav-item mx-md-1 mx-sm-0 my-1 my-md-0">
-                        <a class="nav-link btn btn-dark text-white" href="">Resetar senha</a>
+                        <a class="nav-link btn btn-dark text-white" href="" data-toggle="modal" data-target="#resetSenha">Resetar senha</a>
                     </li>
                     <li class="nav-item mx-md-1 mx-sm-0 my-1 my-md-0">
                         <a class="nav-link btn btn-danger text-white" href="?sair">
